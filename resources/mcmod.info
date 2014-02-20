@@ -1,0 +1,18 @@
+[
+{
+  "modid" : "ea",
+  "name" : "Emerald Armor",
+  "version" : "1.0.0",
+  "url" : "http://twitter.com/IlhomHacker",
+  "credits" : "Created by dand0",
+  "authors" : [
+    "dand0"
+  ],
+  "description" : "Emerald Armor mod will add emerald armor to Minecraft.",
+  "logoFile" : "",
+  "updateUrl" : "",
+  "parent" : "",
+  "screenshots": [
+  ]
+}
+]
