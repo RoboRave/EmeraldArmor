@@ -13,32 +13,9 @@ import cpw.mods.fml.common.registry.VillagerRegistry.IVillageTradeHandler;
 
 public class ArmorTrading implements IVillageTradeHandler {
 
-	public static ArmorTrading INSTANCE = new ArmorTrading();
-	
-	public void load()
-	{
-		VillagerRegistry.instance().registerVillageTradeHandler(1, this);
-		VillagerRegistry.instance().registerVillageTradeHandler(2, this);
-	}
-	
-	@Override
-	public void manipulateTradesForVillager(EntityVillager villager,
-			MerchantRecipeList recipeList, Random random) {
-		switch (villager.getProfession()) {
-		case 3:
-			manipulateBlacksmithTrades(recipeList);
-			break;
-	}
-		
-	}
-	
-	private void manipulateBlacksmithTrades(MerchantRecipeList recipeList)
-	{
-		Item itemMain = Values.itemMain;
-		if (itemMain != null) {
-			recipeList.add(new MerchantRecipe(new ItemStack(Items.emerald, 3 | 5), new ItemStack(itemMain, 1, 11)));
-			recipeList.add(new MerchantRecipe(new ItemStack(Items.emerald), new ItemStack(itemMain, 1, 15)));
-		}
-	}
+    /*Here will be code, which will give us feature of trading with villagers (blacksmith).
+     *  If you want to help, and write the code, you can email me (wwjc@mail.ru), or simple write the code here,
+     * and I would write the value of emerald for each item (chestplate, helmet, boots and leggins)
+    */
 
 }
