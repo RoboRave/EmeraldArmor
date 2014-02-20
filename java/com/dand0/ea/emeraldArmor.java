@@ -40,19 +40,19 @@ public class emeraldArmor {
     	emeraldHelmet = (ItemArmor) new emeraldHelmet(3200, emeraldArmor.EmeraldArmorMaterial, 0, 0).setUnlocalizedName("emeraldHelmet");
     	GameRegistry.registerItem(emeraldHelmet, "emeraldHelmet");
     	ChestGenHooks.addItem(ChestGenHooks.DUNGEON_CHEST, new WeightedRandomChestContent(emeraldArmor.emeraldHelmet, 1, 1/240, 1/240, 1));
-    	EntityVillager.blacksmithSellingList.put(emeraldArmor.emeraldHelmet, new Tuple(Integer.valueOf(3), Integer.valueOf(5)));
+    	// EntityVillager.blacksmithSellingList.put(emeraldArmor.emeraldHelmet, new Tuple(Integer.valueOf(3), Integer.valueOf(5)));
     	emeraldChest = (ItemArmor) new emeraldChest(emeraldArmor.EmeraldArmorMaterial, 1, 1).setUnlocalizedName("emeraldChest");
     	GameRegistry.registerItem(emeraldChest, "emeraldChest");
     	ChestGenHooks.addItem(ChestGenHooks.DUNGEON_CHEST, new WeightedRandomChestContent(emeraldArmor.emeraldChest, 1, 1/240, 1/240, 1));
-    	EntityVillager.blacksmithSellingList.put(emeraldArmor.emeraldChest, new Tuple(Integer.valueOf(4), Integer.valueOf(8)));
+    	// EntityVillager.blacksmithSellingList.put(emeraldArmor.emeraldChest, new Tuple(Integer.valueOf(4), Integer.valueOf(8)));
     	emeraldLeggins = (ItemArmor) new emeraldLeggins(emeraldArmor.EmeraldArmorMaterial, 2, 2).setUnlocalizedName("emeraldLeggins");
     	GameRegistry.registerItem(emeraldLeggins, "emeraldLeggins");
     	ChestGenHooks.addItem(ChestGenHooks.DUNGEON_CHEST, new WeightedRandomChestContent(emeraldArmor.emeraldLeggins, 1, 1/240, 1/240, 1));
-    	EntityVillager.blacksmithSellingList.put(emeraldArmor.emeraldLeggins, new Tuple(Integer.valueOf(4), Integer.valueOf(7)));
+    	// EntityVillager.blacksmithSellingList.put(emeraldArmor.emeraldLeggins, new Tuple(Integer.valueOf(4), Integer.valueOf(7)));
     	emeraldBoots = (ItemArmor) new emeraldBoots(emeraldArmor.EmeraldArmorMaterial, 3, 3).setUnlocalizedName("emeraldBoots");
     	GameRegistry.registerItem(emeraldBoots, "emeraldBoots");
     	ChestGenHooks.addItem(ChestGenHooks.DUNGEON_CHEST, new WeightedRandomChestContent(emeraldArmor.emeraldBoots, 1, 1/240, 1/240, 1));
-    	EntityVillager.blacksmithSellingList.put(emeraldArmor.emeraldBoots, new Tuple(Integer.valueOf(2), Integer.valueOf(4)));
+    	// EntityVillager.blacksmithSellingList.put(emeraldArmor.emeraldBoots, new Tuple(Integer.valueOf(2), Integer.valueOf(4)));
     }
  
     @EventHandler
