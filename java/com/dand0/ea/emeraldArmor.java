@@ -18,6 +18,7 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.event.FMLServerStartingEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.VillagerRegistry;
+import com.dand0.ea.ArmorTrading;
  
 @Mod(modid="ea", version="1.0.0")
 public class emeraldArmor {
@@ -59,7 +60,7 @@ public class emeraldArmor {
     public void init(FMLInitializationEvent event)
     {
     	
-    	VillagerRegistry.instance().registerVillageTradeHandler(3, ArmorTrading);
+    	VillagerRegistry.instance().registerVillageTradeHandler(3, ArmorTrading.INSTANCE.i);
     	ArmorTrading.INSTANCE.load();
     	
     	GameRegistry.addRecipe(new ItemStack(emeraldArmor.emeraldChest), new Object[]{
